@@ -4,4 +4,5 @@ Base gameplay
 Controller
 
 Left Paddle - W S
+
 Right Paddle - UP arrow,Down arrow
