@@ -24,11 +24,13 @@ public class PadelController : MonoBehaviour
       
         if (Input.GetKey(upKey))
         {
+            Debug.Log("Kecepatan Paddle :" + upKey+ " " + speed);
             return Vector2.up * speed;
         }
 
         else if (Input.GetKey(downKey))
         {
+            Debug.Log("Kecepatan Paddle :" + downKey + " " + speed);
             return Vector2.down * speed;
         }
 
