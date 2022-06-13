@@ -10,5 +10,14 @@ public class MainMenuController : MonoBehaviour
         SceneManager.LoadScene("Game");
         Debug.Log("Created by Argia Pranselga - 149251970101-36");
     }
+
+    public void InfoGame()
+    {
+        SceneManager.LoadScene("Info");
+    }
     
+    public void BackMainMenu()
+    {
+        SceneManager.LoadScene("Main Menu 1");
+    }
 }
