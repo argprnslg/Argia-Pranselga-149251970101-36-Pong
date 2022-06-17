@@ -16,6 +16,4 @@ public class PowerUpSpeedUpController : MonoBehaviour
             manager.RemovePowerUp(gameObject);
         }
     }
-
-
 }

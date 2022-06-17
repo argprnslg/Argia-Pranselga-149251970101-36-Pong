@@ -13,11 +13,17 @@ public class MainMenuController : MonoBehaviour
 
     public void InfoGame()
     {
-        SceneManager.LoadScene("Info");
+        SceneManager.LoadScene("Credit");
     }
     
     public void BackMainMenu()
     {
         SceneManager.LoadScene("Main Menu 1");
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+        Debug.Log("QuitGame");
     }
 }
