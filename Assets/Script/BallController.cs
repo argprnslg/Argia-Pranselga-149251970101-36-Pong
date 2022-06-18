@@ -8,8 +8,9 @@ public class BallController : MonoBehaviour
     public Vector2 resetPosition;
     private Rigidbody2D rig;
     public bool isRight = true;
-    
-    
+    public GameObject HitSFX;
+
+  
     private void Start()
     {
         rig = GetComponent<Rigidbody2D>();
@@ -43,5 +44,7 @@ public class BallController : MonoBehaviour
         {
             isRight = false;
         }
-    } 
+
+        Instantiate(HitSFX);
+    }
 }

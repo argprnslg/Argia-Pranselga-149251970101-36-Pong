@@ -10,6 +10,7 @@ public class PUPaddleSpeed : MonoBehaviour
     public GameObject padelKanan;
     public GameObject padelKiri;
     public BallController bola;
+    public GameObject Effect;
    
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -18,11 +19,13 @@ public class PUPaddleSpeed : MonoBehaviour
             if (bola.isRight)
             {
                 padelKanan.GetComponent<PadelController>().paddelSpeedUp();
+                Instantiate(Effect, transform.position, transform.rotation);
                 manager.RemovePowerUp(gameObject);
             }
             else
             {
                 padelKiri.GetComponent<PadelController>().paddelSpeedUp();
+                Instantiate(Effect, transform.position, transform.rotation);
                 manager.RemovePowerUp(gameObject);
             }
         }
